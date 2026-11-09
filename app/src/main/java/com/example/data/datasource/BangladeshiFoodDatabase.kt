@@ -1,0 +1,507 @@
+package com.example.data.datasource
+
+import com.example.data.model.FoodItem
+
+object BangladeshiFoodDatabase {
+    val items: List<FoodItem> = listOf(
+        // --- RICE (ভাত) ---
+        FoodItem(
+            id = "rice_plain",
+            nameEn = "Plain Rice (Sada Bhat)",
+            nameBn = "সাদা ভাত",
+            category = "Rice",
+            servingUnit = "1 plate (200g)",
+            servingSize = 200.0,
+            calories = 260.0,
+            protein = 5.2,
+            carbs = 56.4,
+            fat = 0.6,
+            cookingMethod = "Boiled",
+            description = "Traditional Bangladeshi white steamed rice"
+        ),
+        FoodItem(
+            id = "rice_red",
+            nameEn = "Red Rice (Lal Chal)",
+            nameBn = "লাল চালের ভাত",
+            category = "Rice",
+            servingUnit = "1 plate (200g)",
+            servingSize = 200.0,
+            calories = 222.0,
+            protein = 5.0,
+            carbs = 46.0,
+            fat = 1.8,
+            cookingMethod = "Boiled",
+            description = "Whole grain brown/red rice high in natural fiber and B-vitamins"
+        ),
+        FoodItem(
+            id = "rice_fried",
+            nameEn = "Bangladeshi Fried Rice",
+            nameBn = "ফ্রাইড রাইস",
+            category = "Rice",
+            servingUnit = "1 bowl (250g)",
+            servingSize = 250.0,
+            calories = 360.0,
+            protein = 8.5,
+            carbs = 52.0,
+            fat = 13.0,
+            cookingMethod = "Stir Fried",
+            description = "Fragrant rice stir-fried with eggs, carrots, and spring onions"
+        ),
+
+        // --- TRADITIONAL MEALS (ঐতিহ্যবাহী খাবার) ---
+        FoodItem(
+            id = "trad_khichuri",
+            nameEn = "Khichuri (Plain)",
+            nameBn = "পাতলা খিচুড়ি",
+            category = "Traditional",
+            servingUnit = "1 bowl (250g)",
+            servingSize = 250.0,
+            calories = 310.0,
+            protein = 9.8,
+            carbs = 54.0,
+            fat = 6.2,
+            cookingMethod = "Slow Boiled",
+            description = "Comfort food of rice and lentils with turmeric and cumin"
+        ),
+        FoodItem(
+            id = "trad_bhuna_khichuri",
+            nameEn = "Bhuna Khichuri",
+            nameBn = "ভুনা খিচুড়ি",
+            category = "Traditional",
+            servingUnit = "1 plate (300g)",
+            servingSize = 300.0,
+            calories = 480.0,
+            protein = 13.5,
+            carbs = 68.0,
+            fat = 17.0,
+            cookingMethod = "Braised & Sauteed",
+            description = "Rich, flavorful sauteed rice and lentil pilaf with whole spices and mustard oil"
+        ),
+        FoodItem(
+            id = "trad_tehari",
+            nameEn = "Old Dhaka Beef Tehari",
+            nameBn = "পুরান ঢাকার তেহারি",
+            category = "Traditional",
+            servingUnit = "1 plate (350g)",
+            servingSize = 350.0,
+            calories = 620.0,
+            protein = 24.0,
+            carbs = 72.0,
+            fat = 26.0,
+            cookingMethod = "Mustard Oil Braised",
+            description = "Famous mustard-oil cooked fragrant Chinigura rice with tender spiced beef pieces"
+        ),
+        FoodItem(
+            id = "trad_biryani",
+            nameEn = "Kacchi Biryani",
+            nameBn = "কাচ্চি বিরিয়ানি",
+            category = "Traditional",
+            servingUnit = "1 plate (400g)",
+            servingSize = 400.0,
+            calories = 720.0,
+            protein = 32.0,
+            carbs = 78.0,
+            fat = 31.0,
+            cookingMethod = "Dum Cooked",
+            description = "Layers of marinated meat, potatoes, and basmati or chinigura rice cooked on slow dum"
+        ),
+        FoodItem(
+            id = "trad_pulao",
+            nameEn = "Bangladeshi Plain Pulao",
+            nameBn = "সাদা পোলাও",
+            category = "Traditional",
+            servingUnit = "1 plate (200g)",
+            servingSize = 200.0,
+            calories = 340.0,
+            protein = 5.5,
+            carbs = 58.0,
+            fat = 10.0,
+            cookingMethod = "Ghee Sauteed & Steamed",
+            description = "Aromatic Chinigura or Kalijira rice flavored with ghee, cardamom, and bay leaves"
+        ),
+        FoodItem(
+            id = "trad_morog_polao",
+            nameEn = "Morog Polao",
+            nameBn = "মোরগ পোলাও",
+            category = "Traditional",
+            servingUnit = "1 plate (350g)",
+            servingSize = 350.0,
+            calories = 580.0,
+            protein = 28.0,
+            carbs = 66.0,
+            fat = 22.0,
+            cookingMethod = "Braised",
+            description = "Festive chicken pilaf cooked in rich yogurt and onion-beresta gravy"
+        ),
+
+        // --- PROTEIN (মাছ, মাংস, ডিম ও ডাল) ---
+        FoodItem(
+            id = "prot_chicken_curry",
+            nameEn = "Chicken Curry (Murgir Jhol)",
+            nameBn = "মুরগির লাল ঝোল",
+            category = "Protein",
+            servingUnit = "1 serving (150g)",
+            servingSize = 150.0,
+            calories = 215.0,
+            protein = 23.5,
+            carbs = 4.2,
+            fat = 11.5,
+            cookingMethod = "Curry / Stewed",
+            description = "Home-style tender chicken curry with light potato broth"
+        ),
+        FoodItem(
+            id = "prot_beef_curry",
+            nameEn = "Beef Bhuna (Gorur Mangsho)",
+            nameBn = "গরুর মাংস ভুনা",
+            category = "Protein",
+            servingUnit = "1 serving (150g)",
+            servingSize = 150.0,
+            calories = 310.0,
+            protein = 26.0,
+            carbs = 5.0,
+            fat = 20.0,
+            cookingMethod = "Bhuna (Pan Roasted)",
+            description = "Rich, slow-cooked beef with caramelized onions and roasted garam masala"
+        ),
+        FoodItem(
+            id = "prot_fish_rui",
+            nameEn = "Rui Fish Curry (Rui Macher Jhol)",
+            nameBn = "রুই মাছের ঝোল",
+            category = "Protein",
+            servingUnit = "1 piece with gravy (140g)",
+            servingSize = 140.0,
+            calories = 175.0,
+            protein = 19.0,
+            carbs = 3.5,
+            fat = 9.2,
+            cookingMethod = "Curry",
+            description = "Freshwater carp cooked with cumin paste and sliced potatoes"
+        ),
+        FoodItem(
+            id = "prot_fish_ilish",
+            nameEn = "Shorshe Ilish (Hilsa in Mustard)",
+            nameBn = "সর্ষে ইলিশ",
+            category = "Protein",
+            servingUnit = "1 piece (130g)",
+            servingSize = 130.0,
+            calories = 295.0,
+            protein = 18.0,
+            carbs = 2.8,
+            fat = 23.5,
+            cookingMethod = "Steamed / Mustard Gravy",
+            description = "National fish of Bangladesh prepared in spicy yellow mustard paste and green chillies"
+        ),
+        FoodItem(
+            id = "prot_dal_masoor",
+            nameEn = "Masoor Dal (Red Lentil Soup)",
+            nameBn = "মসুর ডাল (পাতলা ডাল)",
+            category = "Protein",
+            servingUnit = "1 bowl (150g)",
+            servingSize = 150.0,
+            calories = 125.0,
+            protein = 8.2,
+            carbs = 18.0,
+            fat = 2.4,
+            cookingMethod = "Boiled & Tempered (Baghar)",
+            description = "Staple yellow/red lentil soup tempered with garlic, cumin, and dried red chilli"
+        ),
+        FoodItem(
+            id = "prot_dal_moong",
+            nameEn = "Bhuna Moong Dal",
+            nameBn = "ভুনা মুগ ডাল",
+            category = "Protein",
+            servingUnit = "1 bowl (150g)",
+            servingSize = 150.0,
+            calories = 165.0,
+            protein = 10.5,
+            carbs = 22.0,
+            fat = 4.0,
+            cookingMethod = "Roasted & Cooked",
+            description = "Dry roasted moong lentils cooked to a thick aromatic consistency"
+        ),
+        FoodItem(
+            id = "prot_egg_boiled",
+            nameEn = "Boiled Egg",
+            nameBn = "সিদ্ধ ডিম",
+            category = "Protein",
+            servingUnit = "1 large egg (50g)",
+            servingSize = 50.0,
+            calories = 78.0,
+            protein = 6.3,
+            carbs = 0.6,
+            fat = 5.3,
+            cookingMethod = "Hard Boiled",
+            description = "Pure high quality protein and essential nutrients"
+        ),
+        FoodItem(
+            id = "prot_egg_fried",
+            nameEn = "Bangladeshi Egg Omelette / Bhaja",
+            nameBn = "ডিম ভাজা (পেঁয়াজ-মরিচ দিয়ে)",
+            category = "Protein",
+            servingUnit = "1 egg (60g)",
+            servingSize = 60.0,
+            calories = 120.0,
+            protein = 6.5,
+            carbs = 1.8,
+            fat = 9.8,
+            cookingMethod = "Pan Fried",
+            description = "Whisked egg pan-fried with diced shallots, green chillies, and coriander"
+        ),
+
+        // --- VEGETABLES (শাক-সবজি) ---
+        FoodItem(
+            id = "veg_mixed",
+            nameEn = "Mixed Vegetable Curry (Labra)",
+            nameBn = "পাঁচমিশালি সবজি",
+            category = "Vegetables",
+            servingUnit = "1 bowl (150g)",
+            servingSize = 150.0,
+            calories = 105.0,
+            protein = 3.2,
+            carbs = 14.5,
+            fat = 4.0,
+            cookingMethod = "Sauteed",
+            description = "Nutritious seasonal vegetables cooked with paanch phoron (five spice)"
+        ),
+        FoodItem(
+            id = "veg_alu_bhaji",
+            nameEn = "Alu Bhaji (Spiced Potato Fry)",
+            nameBn = "আলু ভাজি",
+            category = "Vegetables",
+            servingUnit = "1 serving (100g)",
+            servingSize = 100.0,
+            calories = 155.0,
+            protein = 2.5,
+            carbs = 23.0,
+            fat = 6.2,
+            cookingMethod = "Pan Fried",
+            description = "Thinly julienned potatoes sauteed with green chillies and turmeric"
+        ),
+        FoodItem(
+            id = "veg_palong_shak",
+            nameEn = "Palong Shak Bhaji (Spinach)",
+            nameBn = "পালং শাক ভাজি",
+            category = "Vegetables",
+            servingUnit = "1 bowl (120g)",
+            servingSize = 120.0,
+            calories = 75.0,
+            protein = 3.6,
+            carbs = 6.0,
+            fat = 4.2,
+            cookingMethod = "Sauteed",
+            description = "Fresh spinach wilted in garlic and mustard oil, high in iron"
+        ),
+        FoodItem(
+            id = "veg_lal_shak",
+            nameEn = "Lal Shak Bhaji (Red Amaranth)",
+            nameBn = "লাল শাক ভাজি",
+            category = "Vegetables",
+            servingUnit = "1 bowl (120g)",
+            servingSize = 120.0,
+            calories = 70.0,
+            protein = 3.4,
+            carbs = 5.8,
+            fat = 3.8,
+            cookingMethod = "Sauteed",
+            description = "Iconic Bangladeshi red amaranth leaves sauteed with sliced garlic"
+        ),
+        FoodItem(
+            id = "veg_begun_bhaja",
+            nameEn = "Begun Bhaja (Fried Eggplant)",
+            nameBn = "বেগুন ভাজা",
+            category = "Vegetables",
+            servingUnit = "2 slices (100g)",
+            servingSize = 100.0,
+            calories = 135.0,
+            protein = 1.8,
+            carbs = 11.0,
+            fat = 9.5,
+            cookingMethod = "Shallow Fried",
+            description = "Round eggplant discs marinated in turmeric, salt and chili, then crisped"
+        ),
+
+        // --- SNACKS & BREADS (স্ন্যাক্স ও রুটি) ---
+        FoodItem(
+            id = "snack_roti",
+            nameEn = "Handmade Atta Roti (Chapati)",
+            nameBn = "আটার পাতলা রুটি",
+            category = "Snacks",
+            servingUnit = "1 piece (35g)",
+            servingSize = 35.0,
+            calories = 88.0,
+            protein = 3.1,
+            carbs = 18.2,
+            fat = 0.5,
+            cookingMethod = "Dry Tawa Toasted",
+            description = "Whole wheat unleavened flatbread, ideal for daily breakfast and dinner"
+        ),
+        FoodItem(
+            id = "snack_paratha",
+            nameEn = "Layered Paratha",
+            nameBn = "তেল পরোটা",
+            category = "Snacks",
+            servingUnit = "1 piece (60g)",
+            servingSize = 60.0,
+            calories = 210.0,
+            protein = 4.2,
+            carbs = 26.5,
+            fat = 9.8,
+            cookingMethod = "Pan Fried with Oil",
+            description = "Flaky, golden layered flatbread traditionally eaten with bhaji or beef"
+        ),
+        FoodItem(
+            id = "snack_singara",
+            nameEn = "Singara (Bangladeshi Samosa)",
+            nameBn = "সিঙ্গারা",
+            category = "Snacks",
+            servingUnit = "1 piece (75g)",
+            servingSize = 75.0,
+            calories = 195.0,
+            protein = 3.2,
+            carbs = 22.0,
+            fat = 10.8,
+            cookingMethod = "Deep Fried",
+            description = "Crispy pastry stuffed with spiced cauliflower, potatoes, and peanuts"
+        ),
+        FoodItem(
+            id = "snack_samosa",
+            nameEn = "Meat / Onion Somucha",
+            nameBn = "সমুচা",
+            category = "Snacks",
+            servingUnit = "1 piece (50g)",
+            servingSize = 50.0,
+            calories = 145.0,
+            protein = 4.5,
+            carbs = 15.0,
+            fat = 7.8,
+            cookingMethod = "Deep Fried",
+            description = "Thin crisp triangular snack with minced filling"
+        ),
+        FoodItem(
+            id = "snack_dal_puri",
+            nameEn = "Dal Puri",
+            nameBn = "ডাল পুরী",
+            category = "Snacks",
+            servingUnit = "1 piece (60g)",
+            servingSize = 60.0,
+            calories = 175.0,
+            protein = 4.0,
+            carbs = 21.0,
+            fat = 8.5,
+            cookingMethod = "Deep Fried",
+            description = "Puffed flatbread stuffed with spiced yellow lentils"
+        ),
+
+        // --- DAIRY & FRUITS (ফলমূল ও দুগ্ধজাত) ---
+        FoodItem(
+            id = "other_milk",
+            nameEn = "Cow Milk (Cow Milk/Pasteurized)",
+            nameBn = "খাঁটি গরুর দুধ",
+            category = "Fruits/Dairy",
+            servingUnit = "1 glass (240ml)",
+            servingSize = 240.0,
+            calories = 150.0,
+            protein = 8.0,
+            carbs = 12.0,
+            fat = 8.0,
+            cookingMethod = "Pasteurized",
+            description = "Rich source of calcium and essential amino acids"
+        ),
+        FoodItem(
+            id = "other_tok_doi",
+            nameEn = "Tok Doi (Sour Curd/Plain Yogurt)",
+            nameBn = "টক দই",
+            category = "Fruits/Dairy",
+            servingUnit = "1 cup (150g)",
+            servingSize = 150.0,
+            calories = 95.0,
+            protein = 6.5,
+            carbs = 7.0,
+            fat = 4.5,
+            cookingMethod = "Fermented",
+            description = "Probiotic-rich natural curd that aids digestion"
+        ),
+        FoodItem(
+            id = "other_mishti_doi",
+            nameEn = "Bogra Mishti Doi (Sweet Yogurt)",
+            nameBn = "বগুড়ার মিষ্টি দই",
+            category = "Fruits/Dairy",
+            servingUnit = "1 cup (150g)",
+            servingSize = 150.0,
+            calories = 210.0,
+            protein = 5.2,
+            carbs = 32.0,
+            fat = 7.0,
+            cookingMethod = "Caramelized & Set",
+            description = "Traditional sweetened earthen pot yogurt from Bogra"
+        ),
+        FoodItem(
+            id = "other_banana",
+            nameEn = "Sagor Kola (Banana)",
+            nameBn = "সাগর কলা",
+            category = "Fruits/Dairy",
+            servingUnit = "1 medium (118g)",
+            servingSize = 118.0,
+            calories = 105.0,
+            protein = 1.3,
+            carbs = 27.0,
+            fat = 0.3,
+            cookingMethod = "Fresh",
+            description = "Natural energy fruit rich in potassium and digestive pectin"
+        ),
+        FoodItem(
+            id = "other_apple",
+            nameEn = "Fresh Apple",
+            nameBn = "আপেল",
+            category = "Fruits/Dairy",
+            servingUnit = "1 medium (180g)",
+            servingSize = 180.0,
+            calories = 95.0,
+            protein = 0.5,
+            carbs = 25.0,
+            fat = 0.3,
+            cookingMethod = "Fresh",
+            description = "Fiber-rich crisp apple for healthy snacking"
+        ),
+        FoodItem(
+            id = "other_bread",
+            nameEn = "White Sandwich Bread",
+            nameBn = "পাউরুটি (সাদা)",
+            category = "Snacks",
+            servingUnit = "2 slices (60g)",
+            servingSize = 60.0,
+            calories = 160.0,
+            protein = 5.0,
+            carbs = 30.0,
+            fat = 2.0,
+            cookingMethod = "Baked",
+            description = "Standard breakfast bakery bread"
+        ),
+        FoodItem(
+            id = "other_brown_bread",
+            nameEn = "Brown / Whole Grain Bread",
+            nameBn = "ব্রাউন ব্রেড",
+            category = "Snacks",
+            servingUnit = "2 slices (60g)",
+            servingSize = 60.0,
+            calories = 145.0,
+            protein = 6.2,
+            carbs = 25.0,
+            fat = 1.8,
+            cookingMethod = "Baked",
+            description = "High fiber bread ideal for balanced sustained energy"
+        )
+    )
+
+    fun search(query: String, category: String? = null): List<FoodItem> {
+        val q = query.trim().lowercase()
+        return items.filter { item ->
+            val matchesCategory = category == null || category == "All" || item.category.equals(category, ignoreCase = true)
+            val matchesQuery = q.isEmpty() ||
+                    item.nameEn.lowercase().contains(q) ||
+                    item.nameBn.contains(query.trim()) ||
+                    item.category.lowercase().contains(q)
+            matchesCategory && matchesQuery
+        }
+    }
+}

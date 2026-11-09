@@ -1,0 +1,183 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with demographic and dietary preferences",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "age": { "type": "number" },
+        "height": { "type": "number" },
+        "weight": { "type": "number" },
+        "activityLevel": { "type": "string" },
+        "dietaryPreference": { "type": "string" },
+        "allergies": { "type": "string" },
+        "language": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin", "super_admin"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "name", "email", "role"]
+    },
+    "Food": {
+      "title": "Food",
+      "description": "Food item in the nutritional database",
+      "type": "object",
+      "properties": {
+        "nameEn": { "type": "string" },
+        "nameBn": { "type": "string" },
+        "category": { "type": "string" },
+        "servingUnit": { "type": "string" },
+        "servingSize": { "type": "number" },
+        "calories": { "type": "number" },
+        "protein": { "type": "number" },
+        "carbs": { "type": "number" },
+        "fat": { "type": "number" },
+        "cookingMethod": { "type": "string" },
+        "description": { "type": "string" },
+        "isVerified": { "type": "boolean" },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["nameEn", "nameBn", "category", "servingUnit", "servingSize", "calories", "protein", "carbs", "fat"]
+    },
+    "FoodEntry": {
+      "title": "FoodEntry",
+      "description": "Food diary log for a user meal",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "foodName": { "type": "string" },
+        "foodNameBn": { "type": "string" },
+        "mealType": { "type": "string", "enum": ["breakfast", "lunch", "dinner", "snack"] },
+        "servingUnit": { "type": "string" },
+        "servingSize": { "type": "number" },
+        "calories": { "type": "number" },
+        "protein": { "type": "number" },
+        "carbs": { "type": "number" },
+        "fat": { "type": "number" },
+        "mealDate": { "type": "string" },
+        "mealTime": { "type": "string" },
+        "isAiEstimated": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "foodName", "mealType", "servingUnit", "servingSize", "calories", "protein", "carbs", "fat", "mealDate"]
+    },
+    "WaterEntry": {
+      "title": "WaterEntry",
+      "description": "Daily water intake entry",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "amountMl": { "type": "number" },
+        "entryDate": { "type": "string" },
+        "entryTime": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "amountMl", "entryDate"]
+    },
+    "MealPlan": {
+      "title": "MealPlan",
+      "description": "Meal plan suggestion or custom user meal plan",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "titleBn": { "type": "string" },
+        "mealCategory": { "type": "string" },
+        "items": { "type": "string" },
+        "calories": { "type": "number" },
+        "protein": { "type": "number" },
+        "carbs": { "type": "number" },
+        "fat": { "type": "number" },
+        "isCustom": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "calories", "protein", "carbs", "fat"]
+    },
+    "FavoriteFood": {
+      "title": "FavoriteFood",
+      "description": "User favorite food bookmark",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "foodId": { "type": "string" },
+        "foodName": { "type": "string" },
+        "foodNameBn": { "type": "string" },
+        "calories": { "type": "number" },
+        "protein": { "type": "number" },
+        "carbs": { "type": "number" },
+        "fat": { "type": "number" },
+        "servingUnit": { "type": "string" },
+        "servingSize": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "foodName", "calories", "protein", "carbs", "fat"]
+    },
+    "NotificationItem": {
+      "title": "NotificationItem",
+      "description": "User notification alert or reminder",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "titleBn": { "type": "string" },
+        "message": { "type": "string" },
+        "messageBn": { "type": "string" },
+        "type": { "type": "string" },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "message"]
+    },
+    "Announcement": {
+      "title": "Announcement",
+      "description": "Broadcast announcements from administrator",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "authorUid": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "content", "authorUid"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Profiles of registered users"
+    },
+    "/foods/{foodId}": {
+      "schema": "Food",
+      "description": "Verified database of food items"
+    },
+    "/foodEntries/{entryId}": {
+      "schema": "FoodEntry",
+      "description": "Daily food intake log records"
+    },
+    "/waterEntries/{entryId}": {
+      "schema": "WaterEntry",
+      "description": "Daily water consumption log records"
+    },
+    "/mealPlans/{planId}": {
+      "schema": "MealPlan",
+      "description": "Suggested and custom meal plans"
+    },
+    "/favoriteFoods/{favoriteId}": {
+      "schema": "FavoriteFood",
+      "description": "User saved favorite foods"
+    },
+    "/notifications/{notificationId}": {
+      "schema": "NotificationItem",
+      "description": "User notifications and reminders"
+    },
+    "/announcements/{announcementId}": {
+      "schema": "Announcement",
+      "description": "Global announcements from admins"
+    }
+  }
+}

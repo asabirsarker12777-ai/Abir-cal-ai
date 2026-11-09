@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "157683168192",
+    "firebase_url": "https://abir-hub-default-rtdb.firebaseio.com",
+    "project_id": "abir-hub",
+    "storage_bucket": "abir-hub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157683168192:android:478194c19a73e5a36d0e25",
+        "android_client_info": {
+          "package_name": "com.abirhub.caloritracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157683168192-eadur9lsjdl3q3m46e3ganoctve8qul1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcXeEnUTgYI18Qhpb-RDjd0RNvQYZ0BGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157683168192-eadur9lsjdl3q3m46e3ganoctve8qul1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

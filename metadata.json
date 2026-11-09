@@ -1,0 +1,6 @@
+{
+  "name": "ABIR CAL AI",
+  "description": "Intelligent calorie tracking and nutrition assistant supporting Bangladeshi and international meals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">ABIR CAL AI</string>
+    <string name="app_tagline">স্মার্ট খাবার। সঠিক ট্র্যাকিং। সুস্থ জীবন।</string>
+    
+    <!-- Auth & Profile -->
+    <string name="sign_in_with_google">গুগল দিয়ে সাইন ইন করুন</string>
+    <string name="welcome_title">ABIR CAL AI তে স্বাগতম</string>
+    <string name="welcome_subtitle">আপনার এআই চালিত পুষ্টি ও ক্যালোরি সহকারী</string>
+    <string name="complete_profile">আপনার প্রোফাইল সম্পন্ন করুন</string>
+    <string name="profile_name">পুরো নাম</string>
+    <string name="profile_age">বয়স</string>
+    <string name="profile_height">উচ্চতা (সেমি)</string>
+    <string name="profile_weight">ওজন (কেজি)</string>
+    <string name="activity_level">দৈনন্দিন সক্রিয়তা</string>
+    <string name="dietary_preference">খাদ্যাভ্যাস পছন্দ</string>
+    <string name="food_allergies">খাদ্য এলার্জি</string>
+    <string name="language">ভাষা</string>
+    <string name="save_profile">প্রোফাইল সংরক্ষণ</string>
+    <string name="logout">লগ আউট</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">হোম</string>
+    <string name="nav_diary">ডায়েরি</string>
+    <string name="nav_scan">স্ক্যান</string>
+    <string name="nav_assistant">এআই সহকারী</string>
+    <string name="nav_analytics">অগ্রগতি</string>
+    <string name="nav_profile">প্রোফাইল</string>
+    
+    <!-- Meals -->
+    <string name="meal_breakfast">সকালের নাস্তা</string>
+    <string name="meal_lunch">দুপুরের খাবার</string>
+    <string name="meal_dinner">রাতের খাবার</string>
+    <string name="meal_snack">বিকেলের নাস্তা</string>
+    
+    <!-- Dashboard -->
+    <string name="calories_consumed">গ্রহণ করা হয়েছে</string>
+    <string name="calories_target">দৈনিক লক্ষ্য</string>
+    <string name="calories_remaining">অবশিষ্ট</string>
+    <string name="protein">প্রোটিন</string>
+    <string name="carbohydrates">কার্বোহাইড্রেট</string>
+    <string name="fat">ফ্যাট</string>
+    <string name="water_intake">পানি গ্রহণ</string>
+    <string name="quick_actions">দ্রুত কাজ</string>
+    <string name="add_water">পানি যোগ</string>
+    <string name="add_food">খাবার যোগ</string>
+    <string name="scan_food">খাবার স্ক্যান</string>
+    
+    <!-- Empty states -->
+    <string name="empty_diary">আজকের কোনো খাবার যোগ করা হয়নি।</string>
+    <string name="empty_diary_hint">শুরু করতে \"+\" চাপুন অথবা খাবারের ছবি স্ক্যান করুন।</string>
+    
+    <!-- AI Scanner -->
+    <string name="scanner_title">এআই ফুড স্ক্যানার</string>
+    <string name="scanner_take_photo">ছবি তুলুন</string>
+    <string name="scanner_gallery">গ্যালারি নির্বাচন</string>
+    <string name="scanner_analyzing">এআই খাবার বিশ্লেষণ করছে...</string>
+    <string name="scanner_disclaimer">পুষ্টি সচেতনতার জন্য অনুমান মাত্র। প্রয়োজন অনুযায়ী পরিমাণ পরিবর্তন করুন।</string>
+    <string name="add_to_diary">ডায়েরিতে যোগ করুন</string>
+    
+    <!-- AI Assistant -->
+    <string name="assistant_title">এআই পুষ্টি সহকারী</string>
+    <string name="assistant_placeholder">বাংলাদেশি খাবার বা পুষ্টি সম্পর্কে জানুন...</string>
+    <string name="assistant_send">পাঠান</string>
+</resources>

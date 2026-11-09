@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">ABIR CAL AI</string>
+    <string name="app_tagline">Eat Smart. Track Better. Live Healthy.</string>
+    
+    <!-- Auth & Profile -->
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="welcome_title">Welcome to ABIR CAL AI</string>
+    <string name="welcome_subtitle">Your AI-Powered Nutrition &amp; Calorie Assistant</string>
+    <string name="complete_profile">Complete Your Profile</string>
+    <string name="profile_name">Full Name</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_height">Height (cm)</string>
+    <string name="profile_weight">Weight (kg)</string>
+    <string name="activity_level">Activity Level</string>
+    <string name="dietary_preference">Dietary Preference</string>
+    <string name="food_allergies">Food Allergies</string>
+    <string name="language">Language</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="logout">Log Out</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_diary">Diary</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_assistant">Ask AI</string>
+    <string name="nav_analytics">Progress</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Meals -->
+    <string name="meal_breakfast">Breakfast</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Dinner</string>
+    <string name="meal_snack">Snacks</string>
+    
+    <!-- Dashboard -->
+    <string name="calories_consumed">Consumed</string>
+    <string name="calories_target">Daily Goal</string>
+    <string name="calories_remaining">Remaining</string>
+    <string name="protein">Protein</string>
+    <string name="carbohydrates">Carbs</string>
+    <string name="fat">Fat</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="add_water">Add Water</string>
+    <string name="add_food">Add Food</string>
+    <string name="scan_food">Scan Food</string>
+    
+    <!-- Empty states -->
+    <string name="empty_diary">No meals logged for today yet.</string>
+    <string name="empty_diary_hint">Tap \"+\" or scan food with AI to get started.</string>
+    
+    <!-- AI Scanner -->
+    <string name="scanner_title">AI Food Scanner</string>
+    <string name="scanner_take_photo">Capture Photo</string>
+    <string name="scanner_gallery">Choose Gallery</string>
+    <string name="scanner_analyzing">Analyzing food with AI...</string>
+    <string name="scanner_disclaimer">Estimates for nutritional awareness. Adjust portion size as needed.</string>
+    <string name="add_to_diary">Add to Diary</string>
+    
+    <!-- AI Assistant -->
+    <string name="assistant_title">AI Nutrition Assistant</string>
+    <string name="assistant_placeholder">Ask about Bangladeshi foods, nutrition...</string>
+    <string name="assistant_send">Send</string>
+    
+    <!-- App Check / General -->
+    <string name="recaptcha_site_key"></string>
+</resources>
